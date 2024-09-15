@@ -1,3 +1,7 @@
+# Custom
+/logs/
+/fetched_news/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
