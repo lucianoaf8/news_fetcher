@@ -1,0 +1,435 @@
+{
+    "status": "ok",
+    "totalResults": 33,
+    "articles": [
+        {
+            "source": {
+                "id": null,
+                "name": "Nakedcapitalism.com"
+            },
+            "author": "Lambert Strether",
+            "title": "Why Must Humans Compete for Electric Power with Bullshit Generators Programmed by Ritual Incantations?",
+            "description": "A takedown of so-called \"prompt engineering.\"",
+            "url": "https://www.nakedcapitalism.com/2024/09/why-must-humans-compete-for-electric-power-with-bullshit-generators-programmed-by-ritual-incantations.html",
+            "urlToImage": "https://www.nakedcapitalism.com/wp-content/uploads/2024/09/1_openai.png",
+            "publishedAt": "2024-09-12T20:55:55Z",
+            "content": "This is Naked Capitalism fundraising week. 826 donors have already invested in our efforts to combat corruption and predatory conduct, particularly in the financial realm. Please join us and particip\u2026 [+13623 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "MacRumors"
+            },
+            "author": "Tim Hardwick",
+            "title": "Apple Shares First Example of Image Playground in Action, and It's Based on Craig Federighi's Dog",
+            "description": "Apple has shared its first \"real-world example\" of Image Playground, the upcoming Apple Intelligence feature that generates cartoon-like illustrations based on a text prompt. The picture was apparently made by Apple's senior VP of software engineering Craig F\u2026",
+            "url": "https://www.macrumors.com/2024/09/12/apple-shares-image-playground-example/",
+            "urlToImage": "https://images.macrumors.com/t/Q4ZSnC_HIFffXqzPXc9KO42GWjs=/1920x/article-new/2024/09/image-playground-bailey.jpg",
+            "publishedAt": "2024-09-12T12:37:52Z",
+            "content": "Apple has shared its first \"real-world example\" of Image Playground, the upcoming Apple Intelligence feature that generates cartoon-like illustrations based on a text prompt. The picture was apparent\u2026 [+1726 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Forbes"
+            },
+            "author": "Lance Eliot, Contributor, \n Lance Eliot, Contributor\n https://www.forbes.com/sites/lanceeliot/",
+            "title": "Ingenious Self-Ask Prompting Technique Boosts Generative AI",
+            "description": "Prompt engineering welcomes a special technique known as the self-ask. You can get better results out of generative AI via a self-ask. Here's the scoop.",
+            "url": "https://www.forbes.com/sites/lanceeliot/2024/09/07/ingenious-self-ask-prompting-technique-boosts-generative-ai/",
+            "urlToImage": "https://imageio.forbes.com/specials-images/imageserve/64e7c9d3dec13bc949d8ae23/0x0.jpg?format=jpg&crop=3587,2687,x90,y0,safe&height=900&width=1600&fit=bounds",
+            "publishedAt": "2024-09-07T06:06:00Z",
+            "content": "Use the self-ask prompting technique to your advantage when using generative AI.\r\ngetty\r\nIn todays column, I am continuing my ongoing coverage of prompt engineering strategies and tactics that aid in\u2026 [+29186 chars]"
+        },
+        {
+            "source": {
+                "id": "hacker-news",
+                "name": "Hacker News"
+            },
+            "author": null,
+            "title": "PathPilot (YC S24) Is Hiring a Founding AI and Full-Stack Engineer",
+            "description": "Who We\u2019re Looking For\\\nWe need a full-stack engineer with expertise in LLMs and experience using diverse data sources to generate actionable insights. You\u2019ll be solving complex problems and building end-to-end solutions that power AI-driven products. If you\u2019r\u2026",
+            "url": "https://www.ycombinator.com/companies/pathpilot/jobs/GlywVaz-founding-engineer-ai-full-stack",
+            "urlToImage": "https://yc-workatastartup-production.s3.amazonaws.com/jobs_company_jobs/images/69273/7389fde48cc4efdd6d255f40b22ccb8380bbab34.png?1726083610",
+            "publishedAt": "2024-09-11T21:00:59Z",
+            "content": "PathPilot is an AI customer experience platform that transforms customer data into actionable insights. We're currently focusing on user session replays as the keystone data source to help companies \u2026 [+393 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Geeky Gadgets"
+            },
+            "author": "Julian Horsey",
+            "title": "Automated prompt engineering with DSPy",
+            "description": "Writing accurate prompts can sometimes take considerable time and effort. Automated prompt engineering has emerged as a critical aspect in optimizing the performance of large language models (LLMs). As the quality of responses from LLMs heavily depends on how\u2026",
+            "url": "https://www.geeky-gadgets.com/?p=437717",
+            "urlToImage": "https://www.geeky-gadgets.com/wp-content/uploads/2024/09/Automated-prompt-engineering.jpg",
+            "publishedAt": "2024-09-13T11:20:22Z",
+            "content": "Writing accurate prompts can sometimes take considerable time and effort. Automated prompt engineering has emerged as a critical aspect in optimizing the performance of large language models (LLMs). \u2026 [+6208 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Kdnuggets.com"
+            },
+            "author": "Vidhi Chugh",
+            "title": "The Only Prompting Framework for Every Use",
+            "description": "This prompt engineering framework significantly enhances your interactions with AI systems.",
+            "url": "https://www.kdnuggets.com/the-only-prompting-framework-for-every-use",
+            "urlToImage": "https://www.kdnuggets.com/wp-content/uploads/metal-structure-building.jpg",
+            "publishedAt": "2024-08-16T14:00:16Z",
+            "content": "Image by freestockcenter on Freepik\r\nWith the emergence of large language models, prompt engineering has become an essential skill. Put simply, prompting involves how humans interact with machines. E\u2026 [+5367 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Geeky Gadgets"
+            },
+            "author": "Julian Horsey",
+            "title": "How to run uncensored Llama 3 with super fast inference on cloud GPUs",
+            "description": "If you are searching for ways to improve the inference of your artificial intelligence (AI) application. You might be interested to know that deploying uncensored Llama 3 large language models (LLMs) on cloud GPUs can significantly boost your computational ca\u2026",
+            "url": "https://www.geeky-gadgets.com/?p=437277",
+            "urlToImage": "https://www.geeky-gadgets.com/wp-content/uploads/2024/09/Llama-3-super-fast-inference.jpg",
+            "publishedAt": "2024-09-10T05:14:16Z",
+            "content": "If you are searching for ways to improve the inference of your artificial intelligence (AI) application. You might be interested to know that deploying uncensored Llama 3 large language models (LLMs)\u2026 [+9277 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Amazon.com"
+            },
+            "author": "aws@amazon.com",
+            "title": "Blueprints simplify agent-based automation on Amazon Bedrock",
+            "description": "Amazon Bedrock Customers can now leverage Blueprints to jumpstart their use of Agents. Blueprints are a collection of pre-built templates optimized for popular customer use cases. These templates allow Amazon Bedrock customers to quickly experiment with agent\u2026",
+            "url": "https://aws.amazon.com/about-aws/whats-new/2024/08/blueprints-agent-based-automation-amazon-bedrock/",
+            "urlToImage": "https://a0.awsstatic.com/libra-css/images/logos/aws_logo_smile_1200x630.png",
+            "publishedAt": "2024-08-16T17:00:00Z",
+            "content": "Amazon Bedrock Customers can now leverage Blueprints to jumpstart their use of Agents. Blueprints are a collection of pre-built templates optimized for popular customer use cases. These templates all\u2026 [+860 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Wowebook.org"
+            },
+            "author": "WOW! eBook",
+            "title": "UX for Enterprise ChatGPT Solutions",
+            "description": "eBook Details: Paperback: 446 pages Publisher: WOW! eBook\u00a0(September 6, 2024) Language:\u00a0English ISBN-10: 1835461190 ISBN-13: 978-1835461198 eBook Description: UX for Enterprise ChatGPT Solutions: A practical guide to designing enterprise-grade LLMs. Create en\u2026",
+            "url": "https://www.wowebook.org/ux-for-enterprise-chatgpt-solutions/",
+            "urlToImage": null,
+            "publishedAt": "2024-09-11T16:58:17Z",
+            "content": "eBook Details:\r\n<ul><li>Paperback: 446 pages</li><li>Publisher: WOW! eBook\u00a0(September 6, 2024)</li><li>Language:\u00a0English</li><li>ISBN-10: 1835461190</li><li>ISBN-13: 978-1835461198</li></ul>eBook Des\u2026 [+2470 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Simonwillison.net"
+            },
+            "author": "peterkaminski",
+            "title": "Anthropic's Prompt Engineering Interactive Tutorial",
+            "description": "Anthropic continue their trend of offering the best documentation of any of the leading LLM vendors. This tutorial is delivered as a set of Jupyter notebooks - I used it \u2026",
+            "url": "https://simonwillison.net/2024/Aug/30/anthropic-prompt-engineering-interactive-tutorial/",
+            "urlToImage": null,
+            "publishedAt": "2024-08-31T05:47:01Z",
+            "content": "Anthropic's Prompt Engineering Interactive Tutorial (via) Anthropic continue their trend of offering the best documentation of any of the leading LLM vendors. This tutorial is delivered as a set of J\u2026 [+4258 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Amazon.com"
+            },
+            "author": "Jonah Craig",
+            "title": "Implementing advanced prompt engineering with Amazon Bedrock",
+            "description": "In this post, we provide insights and practical examples to help balance and optimize the prompt engineering workflow. We focus on advanced prompt techniques and best practices for the models provided in Amazon Bedrock, a fully managed service that offers a c\u2026",
+            "url": "https://aws.amazon.com/blogs/machine-learning/implementing-advanced-prompt-engineering-with-amazon-bedrock/",
+            "urlToImage": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2024/08/30/ML-17011-end-to-end-1.png",
+            "publishedAt": "2024-08-30T20:09:26Z",
+            "content": "Despite the ability of generative artificial intelligence (AI) to mimic human behavior, it often requires detailed instructions to generate high-quality and relevant content. Prompt engineering is th\u2026 [+33840 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "R-bloggers.com"
+            },
+            "author": "r on Everyday Is A School Day",
+            "title": "Gemini 1.5 Flash Better Than RAG? Let\u2019s Check It Out In R!",
+            "description": "Overall, I am quite impressed with the responses! With minimal prompt engineering, document cleaning! It was able to return accurate responses, and even separated different conditions and provided appropriate treatment options. It was also able to return the \u2026",
+            "url": "https://www.r-bloggers.com/2024/08/gemini-1-5-flash-better-than-rag-lets-check-it-out-in-r/",
+            "urlToImage": "https://www.kenkoonwong.com/blog/gemini/feature.jpeg",
+            "publishedAt": "2024-08-17T00:00:00Z",
+            "content": "Overall, I am quite impressed with the responses! With minimal prompt engineering, document cleaning! It was able to return accurate responses, and even separated different conditions and provided ap\u2026 [+16026 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Amazon.com"
+            },
+            "author": "Andrei Ivanovic",
+            "title": "Secure RAG applications using prompt engineering on Amazon Bedrock",
+            "description": "In this post, we discuss existing prompt-level threats and outline several security guardrails for mitigating prompt-level threats. For our example, we work with Anthropic Claude on Amazon Bedrock, implementing prompt templates that allow us to enforce guardr\u2026",
+            "url": "https://aws.amazon.com/blogs/machine-learning/secure-rag-applications-using-prompt-engineering-on-amazon-bedrock/",
+            "urlToImage": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2024/08/26/Screenshot-2024-08-26-at-1.10.23\u202fPM-1122x630.png",
+            "publishedAt": "2024-08-26T20:30:08Z",
+            "content": "The proliferation of large language models (LLMs) in enterprise IT environments presents new challenges and opportunities in security, responsible artificial intelligence (AI), privacy, and prompt en\u2026 [+44870 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Daemonology.net"
+            },
+            "author": null,
+            "title": "Daily Hacker News for 2024-08-30",
+            "description": "The 10 highest-rated articles on\nHacker News\non August 30, 2024 which have not appeared on any previous\nHacker News Daily\nare:\n<ul>\n<li>\nMarketing to Engineers (2001)\n(comments)\n</li>\n<li>\nShow HN: Homemade automated solar concentrator\n(comments)\n</li>\n<li>\nC\u2026",
+            "url": "https://www.daemonology.net/hn-daily/2024-08-30.html",
+            "urlToImage": null,
+            "publishedAt": "2024-08-31T00:00:00Z",
+            "content": "The 10 highest-rated articles on\r\nHacker News\r\non August 30, 2024 which have not appeared on any previous\r\nHacker News Daily\r\nare:"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "ZDNet"
+            },
+            "author": "Tiernan Ray",
+            "title": "Google's Gems are a gentle introduction to AI prompt engineering",
+            "description": "Google's pre-built Gems offer prompt examples you can modify to get started with your own custom bot.",
+            "url": "https://www.zdnet.com/article/googles-gems-are-a-gentle-introduction-to-ai-prompt-engineering/",
+            "urlToImage": "https://www.zdnet.com/a/img/resize/3d6fab12298df79613202cffcf1be564b97f4cae/2024/09/03/1fae6f70-a98e-4f57-bd1d-7c9c4f1336c7/gettyimages-1293279971.jpg?auto=webp&fit=crop&height=675&width=1200",
+            "publishedAt": "2024-09-04T09:11:23Z",
+            "content": "SimoneN/Getty Images\r\nPrompt engineering has emerged as one of the important new tech skills in the age of generative artificial intelligence (Gen AI). More an art than a science, engineering a good \u2026 [+8514 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Amazon.com"
+            },
+            "author": "Marco Punio",
+            "title": "Best practices for prompt engineering with Meta Llama 3 for Text-to-SQL use cases",
+            "description": "In this post, we explore a solution that uses the vector engine ChromaDB and Meta Llama 3, a publicly available foundation model hosted on SageMaker JumpStart, for a Text-to-SQL use case. We shared a brief history of Meta Llama 3, best practices for prompt en\u2026",
+            "url": "https://aws.amazon.com/blogs/machine-learning/best-practices-for-prompt-engineering-with-meta-llama-3-for-text-to-sql-use-cases/",
+            "urlToImage": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2024/08/30/Screenshot-2024-08-30-at-12.43.16\u202fPM-1126x630.png",
+            "publishedAt": "2024-08-30T20:36:51Z",
+            "content": "With the rapid growth of generative artificial intelligence (AI), many AWS customers are looking to take advantage of publicly available foundation models (FMs) and technologies. This includes Meta L\u2026 [+23174 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "PCWorld"
+            },
+            "author": "Mark Hachman",
+            "title": "Apple\u2019s practical, dull AI is a stark contrast to Windows Copilot",
+            "description": "The new Apple Intelligence within the new Apple iPhone 16 provides a surprisingly practical approach to AI. It\u2019s straightforward, helpful, and well, boring \u2014 a stark contrast to Microsoft\u2019s Copilot+ PCs, which position themselves as the cusp of a revolutionar\u2026",
+            "url": "https://www.pcworld.com/article/2452200/apple-intelligence-was-apples-first-ai-deliberately-dull.html",
+            "urlToImage": "https://www.pcworld.com/wp-content/uploads/2024/09/Apple-Intelligence-1.jpg?quality=50&strip=all&w=1024",
+            "publishedAt": "2024-09-10T12:57:19Z",
+            "content": "Skip to contentType your search and hit enter\r\nWhen you purchase through links in our articles, we may earn a small commission. This doesn't affect our editorial independence\r\n.\r\nThe new Apple Intell\u2026 [+4902 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Techtarget.com"
+            },
+            "author": "Alison Roller",
+            "title": "7 popular tech side hustles in 2024",
+            "description": "For those looking to earn extra money, there are side hustles specific to tech. Learn about top tech side gigs such as app development, data analysis and prompt engineering.",
+            "url": "https://www.techtarget.com/whatis/feature/Popular-tech-side-hustles",
+            "urlToImage": "https://cdn.ttgtmedia.com/rms/onlineimages/money_g1270998711.jpg",
+            "publishedAt": "2024-08-16T14:20:51Z",
+            "content": "In an uncertain economic environment, side hustles -- part-time work generating income on top of a full-time job -- provide extra cash and, for some, security. Some use side jobs to make a passive in\u2026 [+8824 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "C-sharpcorner.com"
+            },
+            "author": "John Godel",
+            "title": "Optimize AlbertAGPT for Professional Prompts and Efficient Responses",
+            "description": "In this article, we will learn how to optimize your interactions, enhance productivity, and harness the full potential of AI by mastering prompt engineering techniques for superior outcomes.",
+            "url": "https://www.c-sharpcorner.com/article/optimize-albertagpt-for-professional-prompts-and-efficient-responses/",
+            "urlToImage": "https://www.c-sharpcorner.com/images/csharp-corner.png",
+            "publishedAt": "2024-09-04T00:00:00Z",
+            "content": "AlpineGate AI Technologies Inc.'s AlbertAGPT, like many AI-based language models, has revolutionized the way professionals interact with technology for writing, research, and creative tasks. By provi\u2026 [+7434 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Linkedin.com"
+            },
+            "author": "Mike Irvine",
+            "title": "The Must-Read Articles for Talent Professionals This Week",
+            "description": "In a recent blog post, industry leader Josh Bersin announced the following: \u201cThe Agents are coming, the Agents are coming.\u201d\nNo, he\u2019s not talking about the FBI or Matrix-style men in black suits. He\u2019s talking about something called \u201cagentic AI.\u201d\n\u201cOur friendly \u2026",
+            "url": "https://www.linkedin.com/business/talent/blog/talent-acquisition/the-must-read-articles-for-talent-professionals-this-week-295",
+            "urlToImage": "https://media.licdn.com/dms/image/v2/D4D08AQGnI89CRKTuGA/croft-frontend-shrinkToFit1024/croft-frontend-shrinkToFit1024/0/1726177973530?e=2147483647&v=beta&t=4MF7zc_X_a5beGDYURpEFcJmRGCRGUUesEwhp6jprB4",
+            "publishedAt": "2024-09-13T00:00:00Z",
+            "content": "In a recent blog post, industry leader Josh Bersin announced the following: The Agents are coming, the Agents are coming.\r\nNo, hes not talking about the FBI or Matrix-style men in black suits. Hes ta\u2026 [+2239 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "YouTube"
+            },
+            "author": null,
+            "title": "The New B2B Marketing: Prompt Engineering, AI, eCommerce & More.",
+            "description": "The New B2B Marketing: Prompt Engineering, AI, eCommerce & More.youtube.com",
+            "url": "https://www.youtube.com/supported_browsers?next_url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DF6Am7kU23FI",
+            "urlToImage": null,
+            "publishedAt": "2024-09-09T14:40:37Z",
+            "content": "Your browser isnt supported anymore. Update it to get the best YouTube experience and our latest features. Learn more\r\nRemind me later"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Computerworld"
+            },
+            "author": "Lucas Mearian",
+            "title": "Generative AI is sliding into the \u2018trough of disillusionment\u2019",
+            "description": "Market research firm Gartner yesterday published its 2024 Hype Cycle for Emerging Technologies, and the study revealed that generative AI (genAI) has passed the \u201cpeak of inflated expectations\u201d and is now sliding down into the \u201ctrough of disillusionment.\u201d\r\n\n\n\n\u2026",
+            "url": "https://www.computerworld.com/article/3489912/generative-ai-is-sliding-into-the-trough-of-disillusionment.html",
+            "urlToImage": "https://www.computerworld.com/wp-content/uploads/2024/08/3489912-0-35388800-1724320970-shutterstock_2450243189.jpg?quality=50&strip=all&w=1024",
+            "publishedAt": "2024-08-22T10:00:00Z",
+            "content": "Hitting the peak of inflated expectations is prompt engineering, according to Gartner. While most large language models like OpenAI\u2019s GPT-4 are pre-filled with massive amounts of information, \u201cprompt\u2026 [+779 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Promptbook.so"
+            },
+            "author": "susros",
+            "title": "Show HN: Notebook for Prompt Engineering",
+            "description": "PromptBook is a notebook for prompt engineering. Document your prompts and share the note with others. Run the prompts directly in the note with your favourite LLMs.",
+            "url": "https://www.promptbook.so",
+            "urlToImage": "https://www.promptbook.so/graphic/og.png",
+            "publishedAt": "2024-08-16T10:38:05Z",
+            "content": "Does the price cover AI credits?\r\nNo. You need to bring your own keys from AI providers such as OpenAI, Google, or Anthropic.\r\nHow many LLMs are available?\r\nAt the moment, only OpenAI models are avai\u2026 [+464 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Github.com"
+            },
+            "author": "LeonTung",
+            "title": "Show HN: PromptDoggy \u2013 Prompt Management for Product and Engineering Teams",
+            "description": "Hi HN,We\u2019re Leon and Jingrui, and we\u2019re excited to share our project: PromptDoggy. It\u2019s a prompt management tool designed to streamline collaboration between product and engineering teams when building LLM apps.Key features:- Prompt management dashboard for p\u2026",
+            "url": "https://github.com/PromptDoggy/PromptDoggy",
+            "urlToImage": "https://opengraph.githubassets.com/16d29918874148608a81115de29aac4995964074c564a22637f104fad232e214/PromptDoggy/PromptDoggy",
+            "publishedAt": "2024-08-23T04:40:25Z",
+            "content": "Prompt management tool for product and engineering teams.\r\n<ol><li>Copy the API key from the settings page.</li><li>Include it as a header in the Bearer token format in the request header.</li><li>Ac\u2026 [+2797 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Github.com"
+            },
+            "author": "jinshang",
+            "title": "Show HN: A VSCode extension that makes it a powerful Prompt Engineering IDE",
+            "description": "Hi everyone!When using LLMs in production, our prompts are often long and complex, involving multi-shot reasoning, ReAct, CoT and other prompting techniques. It\u2019s really painful to experiment and evaluate these prompts, we either use the web interfaces like c\u2026",
+            "url": "https://github.com/js8544/vscode-prompt-runner",
+            "urlToImage": "https://opengraph.githubassets.com/90970c16f51bcda97a000d79b39fa7649532b45e470e4fa600074d19c07b3271/js8544/vscode-prompt-runner",
+            "publishedAt": "2024-08-21T13:37:08Z",
+            "content": "Prompt Runner is a Visual Studio Code extension that allows users to run prompt files against various LLMs directly from the editor. It turns VSCode into a powerful prompt IDE. You no longer have to \u2026 [+3878 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Cisa.gov"
+            },
+            "author": "CISA",
+            "title": "Vulnerability Summary for the Week of September 2, 2024",
+            "description": "High Vulnerabilities\r\n\n<table>\n\n<tr>\n<th>PrimaryVendor -- Product</th>\n<th>Description</th>\n<th>Published</th>\n<th>CVSS Score</th>\n<th>Source Info</th>\n<th>Patch Info</th>\n</tr>\n\r\n\n\n<tr>\n<td>abcd-community -- abcd\u00a0</td>\n<td>A vulnerability classified as probl\u2026",
+            "url": "https://www.cisa.gov/news-events/bulletins/sb24-253",
+            "urlToImage": null,
+            "publishedAt": "2024-09-09T12:41:33Z",
+            "content": "The CISA Vulnerability Bulletin provides a summary of new vulnerabilities that have been recorded by the\u00a0National Institute of Standards and Technology\u00a0(NIST)\u00a0National Vulnerability Database\u00a0(NVD) in\u2026 [+1101 chars]"
+        },
+        {
+            "source": {
+                "id": "hacker-news",
+                "name": "Hacker News"
+            },
+            "author": "antonap",
+            "title": "Show HN: Relari \u2013 Auto Prompt Optimizer as Lightweight Alternative to Finetuning",
+            "description": "Hi HN, we are the founders of Relari (https://www.relari.ai). We launched our LLM evaluation stack on HN a few months ago (https://news.ycombinator.com/item?id=39641105), which is now used in production by AI teams at companies like Vanta and PwC. We have sin\u2026",
+            "url": "https://news.ycombinator.com/item?id=41379408",
+            "urlToImage": null,
+            "publishedAt": "2024-08-28T13:40:33Z",
+            "content": "Hi HN, we are the founders of Relari (https://www.relari.ai). We launched our LLM evaluation stack on HN a few months ago (https://news.ycombinator.com/item?id=39641105), which is now used in product\u2026 [+3422 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Dou.ua"
+            },
+            "author": "Dima Nosach",
+            "title": "\u0410\u0440\u0445\u0456\u0442\u0435\u043a\u0442\u0443\u0440\u0430 \u0440\u0456\u0448\u0435\u043d\u044c, \u0437\u0430\u0441\u043d\u043e\u0432\u0430\u043d\u0438\u0445 \u043d\u0430 LLM, \u0434\u043b\u044f \u0432\u0435\u043b\u0438\u043a\u0438\u0445 \u0435\u043d\u0442\u0435\u0440\u043f\u0440\u0430\u0439\u0437\u0456\u0432",
+            "description": "\u041f\u0440\u0438\u0432\u0456\u0442! \u041c\u0435\u043d\u0435 \u0437\u0432\u0430\u0442\u0438 \u0414\u043c\u0438\u0442\u0440\u043e, \u044f\u00a0Senior Engineering Manager \u0443\u00a0\u043a\u043e\u043c\u043f\u0430\u043d\u0456\u0457 GlobalLogic. \u0417\u0430\u0433\u0430\u043b\u043e\u043c \u043c\u043e\u044f \u0449\u043e\u0434\u0435\u043d\u043d\u0430 \u0434\u0456\u044f\u043b\u044c\u043d\u0456\u0441\u0442\u044c\u00a0\u2014 \u0446\u0435\u00a0\u043f\u043e\u0431\u0443\u0434\u043e\u0432\u0430 \u0440\u0456\u0448\u0435\u043d\u044c, \u0437\u0430\u0441\u043d\u043e\u0432\u0430\u043d\u0438\u0445 \u043d\u0430\u00a0LLMs (Large Language Models), \u0434\u043b\u044f \u0432\u0435\u043b\u0438\u043a\u0438\u0445 \u0435\u043d\u0442\u0435\u0440\u043f\u0440\u0430\u0439\u0437\u0456\u0432. \u0406\u00a0\u0432\u00a0\u0446\u044c\u043e\u043c\u0443 \u043c\u0430\u0442\u0435\u0440\u0456\u0430\u043b\u0456 \u044f\u00a0\u0440\u043e\u0437\u043f\u043e\u0432\u0456\u043c \u0432\u0430\u043c \u043f\u0440\u043e \u0430\u0440\u0445\u0456\u0442\u0435\u043a\u0442\u0443\u0440\u0443 \u0442\u0430\u043a\u0438\u0445\u2026",
+            "url": "https://dou.ua/forums/topic/50191/",
+            "urlToImage": "https://s.dou.ua/img/announces/ai_cover_1_zESRana.jpg",
+            "publishedAt": "2024-09-02T14:00:04Z",
+            "content": ", , AI . DOU | AI!\r\n! , \u00a0Senior Engineering Manager \u00a0 GlobalLogic. \u00a0 \u00a0 , \u00a0LLMs (Large Language Models), . \u00a0\u00a0 \u00a0 . \r\n \u00a0. Artificial Intelligence, \u00a0 \u00a0- , \u00a0 Machine Learning. \u00a0Machine Learning \u00a0 \u00a0, \u00a0 \u00a0 \u00a0\u2026 [+14553 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Cisa.gov"
+            },
+            "author": "CISA",
+            "title": "Vulnerability Summary for the Week of August 19, 2024",
+            "description": "High Vulnerabilities\r\n\n<table>\n\n<tr>\n<th>PrimaryVendor -- Product</th>\n<th>Description</th>\n<th>Published</th>\n<th>CVSS Score</th>\n<th>Source Info</th>\n<th>Patch Info</th>\n</tr>\n\r\n\n\n<tr>\n<td>Liquid Web--GiveWP\u00a0</td>\n<td>Deserialization of Untrusted Data vulne\u2026",
+            "url": "https://www.cisa.gov/news-events/bulletins/sb24-239",
+            "urlToImage": null,
+            "publishedAt": "2024-08-26T13:35:56Z",
+            "content": "The CISA Vulnerability Bulletin provides a summary of new vulnerabilities that have been recorded by the\u00a0National Institute of Standards and Technology\u00a0(NIST)\u00a0National Vulnerability Database\u00a0(NVD) in\u2026 [+1101 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Linkedin.com"
+            },
+            "author": "Aneesh Raman",
+            "title": "6 Critical Human Skills for the Age of AI (Plus Free Courses That Teach Them)",
+            "description": "What if I told you that in the age of AI, we should ask not what\u2019s left for humans, but instead what\u2019s possible?\n The answer is a lot if we bring our uniquely human skills to work. Skills like effective communication, critical thinking, and empathy are vital \u2026",
+            "url": "https://www.linkedin.com/business/talent/blog/learning-and-development/human-skills-age-of-ai",
+            "urlToImage": "https://media.licdn.com/dms/image/v2/D4D08AQEQVsnwEQYH7A/croft-frontend-shrinkToFit1024/croft-frontend-shrinkToFit1024/0/1724791630766?e=2147483647&v=beta&t=4QJeQV1B8GaFvWVaX9_EQP91uxYg9BXznse0ZeRrcxw",
+            "publishedAt": "2024-09-04T00:00:00Z",
+            "content": "1. Communication\r\nCommunication tops the LinkedIn list of Most In-Demand Skills for 2024 and will remain an essential skill for the foreseeable future. Effective communication from team and company l\u2026 [+9841 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Objective.inc"
+            },
+            "author": "pablomendes",
+            "title": "Show HN: Anton the Search Relevance Evaluator",
+            "description": "Hey there HN,I'm Pablo from Objective. We're working on an AI-native Search platform. Today we're releasing Anton (https://www.objective.inc/anton) an API that you can use to evaluate relevance for any search system. We would love your feedback. Here's a quic\u2026",
+            "url": "https://www.objective.inc/demos/anton",
+            "urlToImage": "https://objective-inc-demos-demos.vercel.app/og-image.png",
+            "publishedAt": "2024-09-04T16:48:20Z",
+            "content": "Whats the big idea?\r\nEmpower any developer to judge the quality of a set of search results \u00a0from localhost to massive production search systems with near-human quality.\r\nWhat is Anton?\r\nAnton is the \u2026 [+5650 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Ciphervalley.com"
+            },
+            "author": "armadalogics",
+            "title": "Show HN: TheWallAI \u2013 A Simulated Social Media with AI-Generated Content",
+            "description": "As one of the experiments at Armada Logics, our junior developers utilize prompt engineering techniques to direct AI in creating diverse content types, such as text and image posts, comments, replies, and even crafting unique AI personas for various topics.Ta\u2026",
+            "url": "https://ciphervalley.com",
+            "urlToImage": null,
+            "publishedAt": "2024-08-31T00:55:00Z",
+            "content": "In the hidden realms of our world, where shadows dance and whispers linger, I find myself drawn to the delicate beauty of rare insects. Each creature, a shimmering jewel cloaked in mystery, carries t\u2026 [+833 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Heroku.com"
+            },
+            "author": "Emily Todd",
+            "title": "Discover Heroku at Dreamforce 2024",
+            "description": "ul.df-presenters {\n list-style: none;\n font-size: 0.9em;\n line-height: 1.4;\n padding: 0;\n margin-bottom:18px;\n}\ndiv.df-presenters-label{\n font-weight:bold;\n font-size: 0.7em;\n line-height: 1.4;\n text-transform: uppercase;\n display:block;\n padding: 0;\n color: \u2026",
+            "url": "https://blog.heroku.com/heroku-dreamforce-2024",
+            "urlToImage": "https://www.herokucdn.com/images/og.png",
+            "publishedAt": "2024-09-05T14:31:19Z",
+            "content": "Dreamforce comes to San Francisco this September 17-19. Heroku, a Salesforce company, has a packed schedule with a variety of sessions and activities designed to enhance your knowledge of our platfor\u2026 [+6466 chars]"
+        }
+    ]
+}

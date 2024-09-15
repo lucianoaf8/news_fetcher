@@ -1,0 +1,70 @@
+{
+    "pagination": {
+        "limit": 5,
+        "offset": 0,
+        "count": 5,
+        "total": 775
+    },
+    "data": [
+        {
+            "author": "Tico Times",
+            "title": "Costa Rica\u2019s Aging Population Faces Pension Crisis",
+            "description": "A new study by the School of Medicine and the Development Observatory Research Center (CIOdD), both of the University of Costa Rica (UCR), revealed that more than 215,000 elderly people in the country do not receive any type of pension. According to the document, of the 546,225 inhabitants over 65 years of age, only 44% [&#8230;]The post Costa Rica&#8217;s Aging Population Faces Pension Crisis appeared first on The Tico Times | Costa Rica News | Travel | Real Estate.",
+            "url": "https://ticotimes.net/2024/09/14/costa-ricas-aging-population-faces-pension-crisis",
+            "source": "ticotimes",
+            "image": null,
+            "category": "general",
+            "language": "en",
+            "country": "us",
+            "published_at": "2024-09-14T20:48:00+00:00"
+        },
+        {
+            "author": "Stephanie Kaloi",
+            "title": "Conspiracy Theorist Laura Loomer Threatens to Sue Bill Maher for Speculating She\u2019s Hooking Up With Trump | Video",
+            "description": "Even Fox News is asking the former president's campaign why the far-right commentator is traveling with the GOP candidateThe post Conspiracy Theorist Laura Loomer Threatens to Sue Bill Maher for Speculating She\u2019s Hooking Up With Trump | Video appeared first on TheWrap.",
+            "url": "https://www.thewrap.com/laura-loomer-threatens-sue-bill-maher-donald-trump/",
+            "source": "thewrap",
+            "image": null,
+            "category": "general",
+            "language": "en",
+            "country": "us",
+            "published_at": "2024-09-14T19:56:57+00:00"
+        },
+        {
+            "author": "Contributed",
+            "title": "WestJet ordered to pay $633 for flight delay, seat downgrade (Kamloops)",
+            "description": "B.C.&rsquo;s Civil Resolution Tribunal has ordered WestJet to pay a traveller $633 in damages for a missed flight connection. In a Sept. 13 decision, tribunal member Mark Henderson said Steven James Davidson bought a return ticket from Kamloops to Phoenix, Arizona connecting through Calgary with Wes...",
+            "url": "https://www.castanet.net/news/Kamloops/506635/WestJet-ordered-to-pay-633-for-flight-delay-seat-downgrade",
+            "source": "Castanet",
+            "image": "https://www.castanet.net/content/2024/9/glacier_117518_p.jpg",
+            "category": "general",
+            "language": "en",
+            "country": "us",
+            "published_at": "2024-09-14T19:45:00+00:00"
+        },
+        {
+            "author": "Shehan Jeyarajah",
+            "title": "Notre Dame vs. Purdue live stream, where to watch, TV channel, odds, spread, prediction, pick",
+            "description": "The Fighting Irish face another tough test as they travel to Purdue",
+            "url": "https://www.cbssports.com/college-football/news/notre-dame-vs-purdue-live-stream-where-to-watch-tv-channel-odds-spread-prediction-pick/",
+            "source": "CBSSports.com",
+            "image": "https://sportshub.cbsistatic.com/i/2024/09/10/b336f8d8-0a08-49fa-a58b-c36ec853b1f9/notre-dame.jpg",
+            "category": "sports",
+            "language": "en",
+            "country": "us",
+            "published_at": "2024-09-14T19:10:35+00:00"
+        },
+        {
+            "author": null,
+            "title": "Inland Empire residents found guilty of running 'birth tourism' operation",
+            "description": "Two San Bernardino County residents have been found guilty of running a birth tourism operation that helped Chinese women travel to the U.S. to give birth and obtain U.S. citizenship for their newborns.",
+            "url": "https://www.latimes.com/california/story/2024-09-14/inland-empire-residents-found-guilt-of-running-birth-tourism-operation",
+            "source": "latimes",
+            "image": null,
+            "category": "general",
+            "language": "en",
+            "country": "us",
+            "published_at": "2024-09-14T19:02:56+00:00"
+        }
+    ]
+}
