@@ -1,3 +1,0 @@
-2024-09-15 13:24:46,272 - ERROR - Failed to insert data from gnews into the database.
-2024-09-15 13:24:46,273 - INFO - Successfully fetched data from gnews
-2024-09-15 13:24:46,280 - INFO - gnews data saved to c:\Projects\news_fetcher\fetched_news\20240915\gnews_132446.json
