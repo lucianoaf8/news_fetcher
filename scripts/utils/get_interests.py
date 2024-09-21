@@ -28,7 +28,8 @@ def get_interests():
         query = """
         SELECT id, formatted_interest, category, language, country
         FROM interests
-        LIMIT 2;
+        WHERE status = 1
+        AND id IN (36);
         """
 
         cursor.execute(query)

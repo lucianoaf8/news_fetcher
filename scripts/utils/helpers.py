@@ -40,7 +40,7 @@ def fetch_news(url, params, api_name, api_script_path, max_retries=3):
             response.raise_for_status()
             data = response.json()
 
-            # Log the API call without the API key
+             # Log the API call without the API key
             safe_params = params.copy()
             api_key_names = ['apikey', 'api_key', 'key', 'token', 'apiKey']  # Add any other possible API key parameter names
             for key in api_key_names:
@@ -48,6 +48,19 @@ def fetch_news(url, params, api_name, api_script_path, max_retries=3):
                     safe_params[key] = '**REDACTED**'
             
             custom_params = '&'.join([f"{k}={v}" for k, v in safe_params.items()])
+            
+            # Extract the interest from the 'q' parameter
+            interest = safe_params.get('q', '')
+
+            # Add interest as the first key in the JSON response
+            if isinstance(data, dict):
+                # Insert interest as the first key in the dictionary
+                data = {'interest': interest, **data}
+            else:
+                # If the data isn't a dictionary, log an error or handle it accordingly
+                # Optionally, raise an exception or log this case
+                raise ValueError("Expected data to be a dictionary but got something else.")
+            
             insert_api_response(api_script_path, safe_params, data, custom_params)
 
             # Track the API call

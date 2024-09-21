@@ -102,6 +102,9 @@ def process_and_insert_newsdata(api_response):
         logger.error("Empty API response received.")
         return False
 
+    # Get interest value
+    interest = api_response.get('interest', 'Not Provided')
+
     processed_articles = []
     for article in api_response.get('results', []):
         # Validate and log missing fields
@@ -116,6 +119,7 @@ def process_and_insert_newsdata(api_response):
         # Prepare the data for insertion, with validation for required fields
         processed_articles.append({
             'article_id': article_id,
+            'interest': interest,
             'title': title,
             'link': link,
             'keywords': json.dumps(article.get('keywords', [])),
@@ -163,6 +167,9 @@ def process_and_insert_newsapi(api_response):
         return False
 
     processed_articles = []
+    
+    # Get interest value
+    interest = api_response.get('interest', 'Not Provided')
 
     for article in api_response['articles']:
         # Extract and process the data
@@ -186,6 +193,7 @@ def process_and_insert_newsapi(api_response):
 
         # Prepare the data for insertion
         processed_articles.append({
+            'interest': interest,
             'source_id': source_id,
             'source_name': source_name,
             'author': author,

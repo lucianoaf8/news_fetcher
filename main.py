@@ -50,7 +50,13 @@ def run_apis(apis_to_fetch, **kwargs):
             api_params = kwargs.get(api, {})
             # Ensure all parameters are JSON serializable
             api_params = {k: (list(v) if isinstance(v, set) else v) for k, v in api_params.items()}
-            news_data[api] = api_functions[api](**api_params)
+            try:
+                logger.info(f"Fetching data from API: {api} with params: {api_params}")
+                news_data[api] = api_functions[api](**api_params)
+                logger.info(f"Successfully fetched data from API: {api}")
+            except Exception as api_e:
+                logger.error(f"Error fetching data from API {api}: {str(api_e)}")
+                news_data[api] = None
         else:
             logger.warning(f"Skipping unknown API: {api}")
 
@@ -66,17 +72,21 @@ def fetch_news_for_interest(interest):
     Returns:
         dict: A dictionary containing news data from NewsData and NewsAPI for the interest.
     """
-    apis_to_fetch = ['newsdata', 'newsapi']
+    apis_to_fetch = [
+        'newsdata', 
+        'newsapi',
+        'gnews'
+        ]
     common_params = {
         'q': interest['formatted_interest'],
-        'language': interest['language'],
-        'country': interest['country'],
+        'language': interest['language']
     }
 
     kwargs = {
         'newsdata': {
             'endpoint': 'latest',
             'category': interest['category'],
+            'country': interest['country'],
             **common_params
         },
         'newsapi': {
@@ -103,27 +113,43 @@ def main(fetch_interests_flag=False, apis_to_fetch=None, **kwargs):
     """
     try:
         if fetch_interests_flag:
+            apis_to_fetch = ['newsdata', 'newsapi']
             interests = get_interests()
-            all_news_data = {}
+            logger.info(f"Retrieved {len(interests)} interests from the database.")
+
+            # Initialize news_data with APIs as keys
+            news_data = { api: {} for api in apis_to_fetch }
+
             for interest in interests:
-                logger.info(f"Fetching news for interest: {interest['formatted_interest']}")
+                logger.info(f"Fetching news for interest: {interest['formatted_interest']} (ID: {interest['id']})")
                 interest_news = fetch_news_for_interest(interest)
-                all_news_data[interest['id']] = interest_news
-            news_data = all_news_data
+                for api, data in interest_news.items():
+                    if data is not None:
+                        news_data[api][interest['id']] = data
+                        logger.info(f"Added data for API '{api}' and interest ID '{interest['id']}'.")
+                    else:
+                        logger.warning(f"No data returned for API '{api}' and interest ID '{interest['id']}'.")
+
+            logger.info("Completed fetching news for all interests.")
         else:
-            if apis_to_fetch is None:
+            if apis_to_fetch is not None:
+                if isinstance(apis_to_fetch, str):
+                    apis_to_fetch = [apis_to_fetch]
+            else:
+                # If no APIs specified, fetch from all available APIs
                 apis_to_fetch = ['newsdata', 'newsapi', 'gnews', 'mediastack', 'currents']
-            elif isinstance(apis_to_fetch, str):
-                apis_to_fetch = [apis_to_fetch]
 
             # Ensure all parameters are JSON serializable
             for api, params in kwargs.items():
                 kwargs[api] = {k: (list(v) if isinstance(v, set) else v) for k, v in params.items()}
 
+            logger.info(f"Fetching news from APIs: {apis_to_fetch} with parameters: {kwargs}")
             news_data = run_apis(apis_to_fetch, **kwargs)
+            logger.info("Completed fetching news from specified APIs.")
 
+        # Save the collected news data
         save_news_data(news_data)
-        logger.info("News data fetched and saved successfully")
+        logger.info("News data fetched and saved successfully.")
         return news_data
     except Exception as e:
         logger.error(f"An error occurred in main: {str(e)}")
@@ -136,10 +162,11 @@ if __name__ == "__main__":
 
     # To test with custom parameters:
     result = main(
+        fetch_interests_flag=True,
         apis_to_fetch=[
             # 'newsdata',
             # 'newsapi',
-            'gnews',
+            # 'gnews',
             # 'mediastack',
             # 'currents'
         ],
