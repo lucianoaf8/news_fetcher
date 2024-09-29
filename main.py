@@ -20,7 +20,7 @@ from scripts.apis import (
 )
 
 # Initialize logger
-logger = get_logger('news_api')
+logger = get_logger('main')
 
 # Load environment variables
 load_dotenv()
@@ -51,9 +51,9 @@ def run_apis(apis_to_fetch, **kwargs):
             # Ensure all parameters are JSON serializable
             api_params = {k: (list(v) if isinstance(v, set) else v) for k, v in api_params.items()}
             try:
-                logger.info(f"Fetching data from API: {api} with params: {api_params}")
+                logger.debug(f"Fetching data from API: {api} with params: {api_params}")
                 news_data[api] = api_functions[api](**api_params)
-                logger.info(f"Successfully fetched data from API: {api}")
+                logger.debug(f"Successfully fetched data from API: {api}")
             except Exception as api_e:
                 logger.error(f"Error fetching data from API {api}: {str(api_e)}")
                 news_data[api] = None
@@ -62,21 +62,17 @@ def run_apis(apis_to_fetch, **kwargs):
 
     return news_data
 
-def fetch_news_for_interest(interest):
+def fetch_news_for_interest(apis_to_fetch, interest):
     """
-    Fetch news for a single interest from NewsData and NewsAPI.
+    Fetch news for a single interest from NewsData, NewsAPI, and GNews.
 
     Args:
         interest (dict): A dictionary containing interest data.
 
     Returns:
-        dict: A dictionary containing news data from NewsData and NewsAPI for the interest.
+        dict: A dictionary containing news data from NewsData, NewsAPI, and GNews for the interest.
     """
-    apis_to_fetch = [
-        'newsdata', 
-        'newsapi',
-        'gnews'
-        ]
+    
     common_params = {
         'q': interest['formatted_interest'],
         'language': interest['language']
@@ -94,10 +90,20 @@ def fetch_news_for_interest(interest):
             'from_param': (datetime.now() - timedelta(days=30)).strftime('%Y-%m-%d'),
             'to': datetime.now().strftime('%Y-%m-%d'),
             **common_params
+        },
+        'gnews': {
+            'max': 10,  # You can adjust this or make it dynamic based on requirements
+            'from_param': (datetime.now() - timedelta(days=60)).strftime('%Y-%m-%dT%H:%M:%SZ'),
+            'to': datetime.now().strftime('%Y-%m-%dT%H:%M:%SZ'),
+            'in_param': 'title,description',
+            'nullable': 'image',
+            'lang': interest['language'],
+            'q': interest['formatted_interest']
         }
     }
 
     return run_apis(apis_to_fetch, **kwargs)
+
 
 def main(fetch_interests_flag=False, apis_to_fetch=None, **kwargs):
     """
@@ -113,16 +119,15 @@ def main(fetch_interests_flag=False, apis_to_fetch=None, **kwargs):
     """
     try:
         if fetch_interests_flag:
-            apis_to_fetch = ['newsdata', 'newsapi']
             interests = get_interests()
-            logger.info(f"Retrieved {len(interests)} interests from the database.")
+            logger.debug(f"Retrieved {len(interests)} interests from the database.")
 
             # Initialize news_data with APIs as keys
             news_data = { api: {} for api in apis_to_fetch }
 
             for interest in interests:
                 logger.info(f"Fetching news for interest: {interest['formatted_interest']} (ID: {interest['id']})")
-                interest_news = fetch_news_for_interest(interest)
+                interest_news = fetch_news_for_interest(apis_to_fetch, interest)
                 for api, data in interest_news.items():
                     if data is not None:
                         news_data[api][interest['id']] = data
@@ -143,7 +148,7 @@ def main(fetch_interests_flag=False, apis_to_fetch=None, **kwargs):
             for api, params in kwargs.items():
                 kwargs[api] = {k: (list(v) if isinstance(v, set) else v) for k, v in params.items()}
 
-            logger.info(f"Fetching news from APIs: {apis_to_fetch} with parameters: {kwargs}")
+            logger.debug(f"Fetching news from APIs: {apis_to_fetch} with parameters: {kwargs}")
             news_data = run_apis(apis_to_fetch, **kwargs)
             logger.info("Completed fetching news from specified APIs.")
 
@@ -162,13 +167,13 @@ if __name__ == "__main__":
 
     # To test with custom parameters:
     result = main(
-        fetch_interests_flag=True,
+        fetch_interests_flag=False,
         apis_to_fetch=[
             # 'newsdata',
             # 'newsapi',
             # 'gnews',
             # 'mediastack',
-            # 'currents'
+            'currents'
         ],
         newsdata={
             'endpoint': 'latest',
@@ -203,24 +208,63 @@ if __name__ == "__main__":
             'language': 'en',
         },
         gnews={
-            'q': 'triathlon',
+            'q': 'cultura pop brasil',
             'max': 10,
-            'lang': 'en',
-            'from_param': (datetime.now() - timedelta(days=30)).strftime('%Y-%m-%dT%H:%M:%SZ'),
+            'lang': 'pt',
+            'from_param': (datetime.now() - timedelta(days=90)).strftime('%Y-%m-%dT%H:%M:%SZ'),
             'to': datetime.now().strftime('%Y-%m-%dT%H:%M:%SZ'),
             'in_param': 'title,description',
             'nullable': 'image'
         },
         mediastack={
-            'keywords': 'travel on a budget',
-            'countries': 'us,gb',
-            'limit': 5,
-            'date': f"{(datetime.now() - timedelta(days=7)).strftime('%Y-%m-%d')},{datetime.now().strftime('%Y-%m-%d')}"
+            'limit': 30,
+            'keywords': 'machine learning',
+
+            'categories': 'technology, -general, -science',
+            # general - Uncategorized News
+            # business - Business News
+            # entertainment - Entertainment News
+            # health - Health News
+            # science - Science News
+            # sports - Sports News
+            # technology - Technology News
+
+            'countries': 'us',
+            'languages': 'en',
+            # 'date': f"{(datetime.now() - timedelta(days=30)).strftime('%Y-%m-%d')},{datetime.now().strftime('%Y-%m-%d')}",
+            'sort': 'popularity',
         },
         currents={
-            'keywords': 'neuropsychology statistics and breakthroughs',
-            'start_date': (datetime.now() - timedelta(days=7)).strftime('%Y-%m-%d'),
-            'end_date': datetime.now().strftime('%Y-%m-%d')
+                'keywords': 'Fofoca de artista',
+                'language': 'pt',
+                'country': 'BR',
+                
+                'category': 'regional',
+                #    "regional",
+                #     "technology",
+                #     "lifestyle",
+                #     "business",
+                #     "general",
+                #     "programming",
+                #     "science",
+                #     "entertainment",
+                #     "world",
+                #     "sports",
+                #     "finance",
+                #     "academia",
+                #     "politics",
+                #     "health",
+                #     "opinion",
+                #     "food",
+                
+                'start_date': (datetime.now() - timedelta(days=30)).strftime('%Y-%m-%dT%H:%M:%S+00:00'),
+                'end_date': datetime.now().strftime('%Y-%m-%dT%H:%M:%S+00:00'),
+                'type': 1,
+                'page_number': 1,
+                # 'domain': 'scientificamerican.com',
+                # 'domain_not': 'example.com',
+                'page_size': 30,
+                # 'limit': 50
         }
     )
-    print(json.dumps(result, indent=2))
+    logger.debug((json.dumps(result, indent=2)))

@@ -32,7 +32,7 @@ try:
         pool_reset_session=True,
         **DB_CONFIG
     )
-    logger.info("Connection pool created successfully")
+    logger.debug("Connection pool created successfully")
 except Error as e:
     logger.error(f"Error creating connection pool: {e}")
     raise
@@ -79,7 +79,7 @@ if __name__ == "__main__":
         with conn.cursor() as cursor:
             cursor.execute("SELECT 1")
             result = cursor.fetchone()
-            logger.info(f"Test query result: {result}")
+            logger.debug(f"Test query result: {result}")
         
     except Error as e:
         logger.error(f"Error in database operation: {e}")

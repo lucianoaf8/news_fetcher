@@ -113,4 +113,4 @@ def save_news_data(news_data):
         with open(file_path, 'w') as f:
             json.dump(api_data, f, indent=4)
 
-        logger.info(f"{api_name} data saved to {file_path}")
+        logger.debug(f"{api_name} data saved to {file_path}")

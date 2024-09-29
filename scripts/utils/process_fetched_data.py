@@ -42,7 +42,7 @@ def process_and_insert_data(api_name, api_response):
     
 def insert_data_into_db(data_list, table_name):
     """
-    Insert data into the given table, skipping duplicate entries.
+    Insert data into the given table, skipping duplicate entries based on title.
     
     Args:
         data_list (list): A list of dictionaries containing the data to be inserted.
@@ -56,23 +56,48 @@ def insert_data_into_db(data_list, table_name):
         conn = get_db_connection()
         cursor = conn.cursor()
 
+        # Collect all titles from data_list
+        titles = [data.get('title') for data in data_list if data.get('title')]
+        titles_set = set(titles)
+
+        if not titles_set:
+            logger.error("No titles found in data_list.")
+            return False
+
+        # Prepare the SQL to get existing titles
+        placeholders = ', '.join(['%s'] * len(titles_set))
+        sql = f"SELECT title FROM {table_name} WHERE title IN ({placeholders})"
+        cursor.execute(sql, list(titles_set))
+        existing_titles = set(row[0] for row in cursor.fetchall())
+
+        logger.info(f"Found {len(existing_titles)} existing titles in {table_name} table.")
+
+        # Now, insert records whose title is not in existing_titles
+        inserted_count = 0
         for data in data_list:
+            title = data.get('title', None)
+            if title is None:
+                logger.warning("Data record missing 'title', skipping.")
+                continue
+
+            if title in existing_titles:
+                logger.warning(f"Duplicate title found: '{title}', skipping this record.")
+                continue
+
+            # Prepare the INSERT statement
             columns = ', '.join(data.keys())
             placeholders = ', '.join(['%s'] * len(data))
             sql = f"INSERT INTO {table_name} ({columns}) VALUES ({placeholders})"
 
             try:
                 cursor.execute(sql, list(data.values()))
+                inserted_count += 1
             except Error as e:
-                # Check for duplicate entry error code 1062
-                if e.errno == 1062:
-                    logger.warning(f"Duplicate entry found: {e}, skipping this record.")
-                    continue  # Skip this record and continue with the next one
-                else:
-                    raise  # Re-raise the exception if it's not a duplicate entry error
+                logger.error(f"Error inserting data into {table_name} table: {e}")
+                raise  # Re-raise the exception if it's a different error
 
         conn.commit()
-        logger.info(f"Successfully inserted {len(data_list)} records into {table_name} table (excluding duplicates)")
+        logger.info(f"Successfully inserted {inserted_count} records into {table_name} table (excluding duplicates)")
         return True
 
     except Error as e:
@@ -212,7 +237,58 @@ def process_and_insert_newsapi(api_response):
     return insert_data_into_db(processed_articles, 'newsapi')
 
 def process_and_insert_gnews(api_response):
-    pass
+    """
+    Process the GNews API response and insert the results into the gnews table.
+
+    Args:
+        api_response (dict): The JSON response from the GNews API
+
+    Returns:
+        bool: True if processing and insertion were successful, False otherwise
+    """
+    if not api_response or 'articles' not in api_response:
+        logger.error("Invalid or empty API response received from GNews.")
+        return False
+
+    processed_articles = []
+
+    # Get interest value
+    interest = api_response.get('interest', 'Not Provided')
+
+    for article in api_response['articles']:
+        # Extract and process the data
+        title = article.get('title', 'No Title')
+        description = article.get('description', '')
+        url = article.get('url', 'No URL')
+        image = article.get('image')  # Assuming 'image' field exists
+        published_at = article.get('publishedAt')
+        content = article.get('content')
+
+        # Convert publishedAt to MySQL DATETIME format
+        if published_at:
+            try:
+                published_at = datetime.strptime(published_at, "%Y-%m-%dT%H:%M:%SZ").strftime("%Y-%m-%d %H:%M:%S")
+            except ValueError:
+                logger.warning(f"Invalid date format for publishedAt: {published_at}")
+                published_at = None
+
+        # Prepare the data for insertion
+        processed_articles.append({
+            'interest': interest,
+            'title': title,
+            'description': description,
+            'url': url,
+            'image': image,
+            'published_at': published_at,
+            'content': content
+        })
+
+    if not processed_articles:
+        logger.error("No valid articles to insert for GNews.")
+        return False
+
+    return insert_data_into_db(processed_articles, 'gnews')  # Ensure you have a 'gnews' table
+
 
 def process_and_insert_mediastack(api_response):
     pass

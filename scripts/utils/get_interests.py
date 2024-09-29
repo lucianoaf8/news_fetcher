@@ -29,7 +29,7 @@ def get_interests():
         SELECT id, formatted_interest, category, language, country
         FROM interests
         WHERE status = 1
-        AND id IN (36);
+        AND id IN (35);
         """
 
         cursor.execute(query)
